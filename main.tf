@@ -10,7 +10,6 @@ resource "aws_instance" "ubuntu" {
   tags = {
     Name  = var.name
     owner = "vitalii_varenyk@epam.com"
-    ttl   = "-1"
   }
 }
 
@@ -21,5 +20,6 @@ resource "aws_s3_bucket" "Devops" {
   tags = {
     Name        = "var.name"
     Environment = "Dev"
+    owner = "vitalii_varenyk@epam.com"
   }
 }
