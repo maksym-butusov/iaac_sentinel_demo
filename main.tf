@@ -9,7 +9,17 @@ resource "aws_instance" "ubuntu" {
   associate_public_ip_address = "true"
   tags = {
     Name  = var.name
-    owner = "roger@hashicorp.com"
+    owner = "vitalii_varenyk@epam.com"
     ttl   = "-1"
+  }
+}
+
+resource "aws_s3_bucket" "Devops" {
+  bucket = "devops-44439483843894839"
+  acl    = "private"
+
+  tags = {
+    Name        = "var.name"
+    Environment = "Dev"
   }
 }

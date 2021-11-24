@@ -15,6 +15,5 @@ variable "instance_type" {
 
 variable "name" {
   description = "name to pass to Name tag"
-  default     = "SE Hangout Demo"
+  default     = "Vitalii_Varenyk"
 }
-
