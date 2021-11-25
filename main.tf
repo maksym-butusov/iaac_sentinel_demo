@@ -8,7 +8,6 @@ resource "aws_instance" "ubuntu" {
   availability_zone           = "${var.aws_region}b"
   associate_public_ip_address = "true"
   tags = {
-    Name  = var.name
     owner = "email@example.com"
   }
 }
@@ -18,7 +17,6 @@ resource "aws_s3_bucket" "Devops" {
   acl    = "private"
 
   tags = {
-    Name        = "var.name"
     Environment = "Dev"
     owner = "email@example.com"
   }
