@@ -21,10 +21,11 @@ provider "aws" {
 #     owner = "email@example.com"
 #   }
 # }
-resource "null_resource" "example2" {
+resource "null_resource" "example3" {
   provisioner "local-exec" {
     command = <<-EOT
        aws --version
+       aws sts get-caller-identity
     EOT
   }
 }
