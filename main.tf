@@ -21,10 +21,7 @@ provider "aws" {
 #     owner = "email@example.com"
 #   }
 # }
-resource "null_resource" "run" {
-
- provisioner "local-exec" {
-
-    command = "/bin/bash aws --version"
+provisioner "local-exec" {
+    command = "echo test"
   }
 }
