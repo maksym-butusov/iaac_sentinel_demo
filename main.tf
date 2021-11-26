@@ -21,7 +21,8 @@ provider "aws" {
 #     owner = "email@example.com"
 #   }
 # }
-provisioner "local-exec" {
+resource "null_resource" "example1" {
+  provisioner "local-exec" {
     command = "echo test"
   }
 }
