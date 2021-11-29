@@ -21,7 +21,7 @@ provider "aws" {
 #     owner = "email@example.com"
 #   }
 # }
-resource "null_resource" "example3" {
+resource "null_resource" "example35454" {
   provisioner "local-exec" {
     command = <<-EOT
        aws --version
